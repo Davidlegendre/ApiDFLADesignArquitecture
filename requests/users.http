@@ -1,0 +1,69 @@
+###
+POST http://localhost:3000/user/auth
+Content-Type: application/json
+
+{
+    "user": "dfla",
+    "pass": "dfla.2021"
+}
+
+
+###
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "nombre":"ejemplo1", 
+    "apellido_p": "ejemplo1", 
+    "apellido_m": "ejemplo1", 
+    "nick": "ejemplo1", 
+    "password": "ejemplo.2021", 
+    "correo": "ejemplo@gmail.com", 
+    "telefono":"972376641", 
+    "foto": "none",
+    "descripcion": "soy un ejemplo"
+}
+
+###
+Get http://localhost:3000/user/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJub20iOiJEYXZpZCJ9LCJpYXQiOjE2Mzg3MTE4MjAsImV4cCI6MTYzODc5ODIyMH0.WoMR2xKqTPnFxe2jOb9dIHo-IF19M9BHLBDO1mGGuaQ
+
+###
+PUT http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJub20iOiJEYXZpZCJ9LCJpYXQiOjE2MzgwOTc3NzcsImV4cCI6MTYzODE4NDE3N30.QU8F1OAbBzdm8D8E94qfA-neTZ3wIKYn_Xql5OMuVq4",
+    "nombre": "David",
+    "apellido_p": "Legendre",
+    "apellido_m": "Albites",
+    "correo": "legendre2013@gmail.com",
+    "telefono": 972376641,
+    "foto": "https://scontent.ftru1-1.fna.fbcdn.net/v/t39.30808-1/c0.33.200.200a/p200x200/242133384_4479895382074918_8574806402688149162_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=qitajGs3mtkAX_ZyBdV&_nc_ht=scontent.ftru1-1.fna&oh=171bd95c117dd6c76a33ae8cb3c5dfdc&oe=61A81D3B",
+    "descrip_personal": "Diseños buenos"
+}
+
+###
+PUT http://localhost:3000/user/account/nick
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJub20iOiJlamVtcGxvMSJ9LCJpYXQiOjE2Mzc4NTEwNzksImV4cCI6MTYzNzkzNzQ3OX0.HWyrNZ3JKWXBr8_67FkNH0eFGjZrk5Ak9M0u4tnk2Qc",
+    "nick": "elpepe"
+}
+###
+PUT http://localhost:3000/user/account/pass
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJub20iOiJlamVtcGxvMSJ9LCJpYXQiOjE2Mzc4NTEwNzksImV4cCI6MTYzNzkzNzQ3OX0.HWyrNZ3JKWXBr8_67FkNH0eFGjZrk5Ak9M0u4tnk2Qc",
+    "password": "thanos.2021"
+}
+
+
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJub20iOiJlamVtcGxvMSJ9LCJpYXQiOjE2Mzc4NTEwNzksImV4cCI6MTYzNzkzNzQ3OX0.HWyrNZ3JKWXBr8_67FkNH0eFGjZrk5Ak9M0u4tnk2Qc"
+}

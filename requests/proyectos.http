@@ -1,0 +1,58 @@
+GET http://localhost:3000/proyectos
+###
+GET http://localhost:3000/proyectos/26
+###
+GET http://localhost:3000/proyectos/buscar/david
+###
+GET http://localhost:3000/proyectos/account/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJub20iOiJEYXZpZCJ9LCJpYXQiOjE2Mzg3MTE4MjAsImV4cCI6MTYzODc5ODIyMH0.WoMR2xKqTPnFxe2jOb9dIHo-IF19M9BHLBDO1mGGuaQ
+###
+Post http://localhost:3000/proyectos
+Content-Type:  application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJub20iOiJEYXZpZCJ9LCJpYXQiOjE2Mzg3MTE4MjAsImV4cCI6MTYzODc5ODIyMH0.WoMR2xKqTPnFxe2jOb9dIHo-IF19M9BHLBDO1mGGuaQ",
+    "nombre":"Instalacion de Prueba",
+    "descripcion":"Para proyectar adecuadamente una instalación deportiva es preciso tener una amplia experiencia en este sector y un conocimiento profundo de las Normas Reglamentarias de aplicación (UNE-EN, NIDE, Federaciones Deportivas, CTE) planteando la instalación siempre desde un doble punto de vista: el del promotor/gestor, que debe contar con una instalación práctica, útil y rentable y desde el punto de vista del deportista, el usuario final del equipamiento deportivo. Sin olvidar la experiencia del espectador, que formará parte de las instalaciones previstas para público, espectáculo y competición. Es necesario tener un buen conocimiento de las distintas prácticas deportivas y de ocio saludable, en un mercado con nuevas tendencias en constante desarrollo, así como de aspectos tales como los dimensionales, de trazado, orientación solar, iluminación, tipo de superficies deportivas y material deportivo, etc, que influyen en la práctica activa del deporte o de la especialidad de que se trate.",
+    "banner": "https://th.bing.com/th/id/OIP.00X4_IYEWfvWjDq2TRY-2QHaD4?pid=ImgDet&rs=1",
+    "recursos":[{
+
+        "url": "https://th.bing.com/th/id/R.ddbcb60df3550a942970c12f797aa9bc?rik=GP5r8cpXFwbTgw&riu=http%3a%2f%2fwww.esan.edu.pe%2fapuntes-empresariales%2f2016%2f10%2f25%2fproyectoempresarial_principal.jpg&ehk=owxaAo8gVQovQgZRjwHUIibLO%2bByg1OmQNoA6qNtkc4%3d&risl=&pid=ImgRaw&r=0",
+        "titulo": "35775773575375357",
+        "tipo": "img"
+    },
+    {
+
+        "url": "https://th.bing.com/th/id/R.5340aa4f4ba3151b6c8fd30875486d1b?rik=cuaR5we1kJvRrQ&riu=http%3a%2f%2fredimensiona.mx%2fimages%2fservicios%2ftecnologia%2fproyectos-tecnologicos-0.png&ehk=TehDS9yDWoYCvaBRg7ORyvxQ9EBPHFWip81B6ZP%2bSGg%3d&risl=&pid=ImgRaw&r=0",
+        "titulo": "sionaod",
+        "tipo": "video"
+    }
+    ]
+}
+
+###
+PUT http://localhost:3000/proyectos
+Content-Type: application/json
+
+{
+    
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJub20iOiJEYXZpZCJ9LCJpYXQiOjE2Mzg3MTE4MjAsImV4cCI6MTYzODc5ODIyMH0.WoMR2xKqTPnFxe2jOb9dIHo-IF19M9BHLBDO1mGGuaQ",
+    "id": 3,
+    "banner": "ffdfddfsa",
+    "nombre":"y5e50ge",
+    "descripcion":"noaso",
+    "recursos":[{
+        "url": "5t445t54t",
+        "titulo": "hosad",
+        "tipo": "img"
+    }
+    ]
+
+}
+###
+POST http://localhost:3000/proyectos/del
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJub20iOiJEYXZpZCJ9LCJpYXQiOjE2MzgyOTMxMjgsImV4cCI6MTYzODM3OTUyOH0.pZzvNPs4t9xDtptZphmulO4T8UgD98NMy63M1cVsw10",
+    "id":4
+}
